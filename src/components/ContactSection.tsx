@@ -60,7 +60,7 @@ Guest Count: ${formData.guestCount}
 
 I'd love to discuss this further!`;
     
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/919638063350?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -226,7 +226,7 @@ I'd love to discuss this further!`;
                   </div>
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <div className="text-muted-foreground">+91 98765 43210</div>
+                    <div className="text-muted-foreground">+91 96380 63350</div>
                   </div>
                 </div>
 

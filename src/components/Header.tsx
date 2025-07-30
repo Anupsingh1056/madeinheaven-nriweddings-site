@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/919876543210?text=Hello! I would like to know more about your wedding planning services.', '_blank');
+    window.open('https://wa.me/919638063350?text=Hello! I would like to know more about your wedding planning services.', '_blank');
   };
 
   return (
@@ -22,11 +23,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-lg">M</span>
-            </div>
-            <div className="font-serif font-bold text-xl text-primary">Made in Heaven</div>
+          <div className="flex items-center space-x-3">
+            <img src={logo} alt="Made in Heaven" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

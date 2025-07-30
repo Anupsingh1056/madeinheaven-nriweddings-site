@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/919876543210?text=Hello! I would like to know more about your wedding planning services.', '_blank');
+    window.open('https://wa.me/919638063350?text=Hello! I would like to know more about your wedding planning services.', '_blank');
   };
 
   return (
