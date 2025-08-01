@@ -11,9 +11,9 @@ const ServicesSection = () => {
     },
     {
       icon: Video,
-      title: "Virtual Wedding Planning",
-      description: "Complete remote planning with video calls, virtual tours & real-time updates",
-      features: ["Video consultations", "Virtual venue tours", "Live planning updates", "Remote approvals"]
+      title: "Remote & Local Planning",
+      description: "Complete planning support whether you're local or abroad with video calls & real-time updates",
+      features: ["Video consultations", "Virtual venue tours", "Live planning updates", "Local coordination"]
     },
     {
       icon: Flower,
@@ -41,9 +41,9 @@ const ServicesSection = () => {
     },
     {
       icon: Music,
-      title: "Mehendi & Sangeet",
-      description: "Vibrant celebrations with traditional entertainment and modern flair",
-      features: ["Artist booking", "Sound systems", "Choreography", "Live performances"]
+      title: "Mehendi, Sangeet & Haldi",
+      description: "Traditional ceremonies with authentic rituals for Hindu, Sikh, Muslim & all Indian cultures",
+      features: ["Mehendi artists", "Sangeet choreography", "Haldi ceremonies", "Cultural customization"]
     },
     {
       icon: Gift,
@@ -71,7 +71,7 @@ const ServicesSection = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               From intimate ceremonies to grand celebrations, we offer comprehensive 
-              wedding planning services tailored for NRI families.
+              wedding planning services for Indian families — including those living abroad.
             </p>
           </div>
 

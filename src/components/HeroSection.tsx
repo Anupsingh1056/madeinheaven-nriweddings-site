@@ -31,22 +31,20 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Badge */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-8">
-            <span className="text-sm font-medium">🏆 Trusted by 100+ NRI Families</span>
+            <span className="text-sm font-medium">🏆 India's Trusted Wedding Planners</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            NRI Weddings in India.
+            Weddings Made Magical,
             <br />
-            <span className="text-accent">Seamlessly Planned.</span>
-            <br />
-            Beautifully Executed.
+            <span className="text-accent">Anywhere in India.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            From venue to varmala — we handle it all while you're abroad. 
-            Plan your dream wedding remotely with complete trust and luxury.
+            From varmala to vidaai — we handle everything so your family can enjoy the moment, 
+            whether you're in Vadodara or Vancouver.
           </p>
 
           {/* CTA Buttons */}
@@ -57,7 +55,7 @@ const HeroSection = () => {
               onClick={scrollToContact}
               className="px-8 py-4 text-lg font-semibold"
             >
-              Start Planning Your Dream Wedding
+              Start Planning Your Wedding
             </Button>
             <Button 
               variant="whatsapp" 
@@ -66,15 +64,15 @@ const HeroSection = () => {
               className="px-8 py-4 text-lg font-semibold"
             >
               <MessageCircle className="w-5 h-5" />
-              Contact via WhatsApp
+              Chat with Us on WhatsApp
             </Button>
           </div>
 
           {/* Trust Indicators */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-3xl font-bold mb-2">100+</div>
-              <div className="text-white/80">Successful NRI Weddings</div>
+              <div className="text-3xl font-bold mb-2">500+</div>
+              <div className="text-white/80">Successful Weddings</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-3xl font-bold mb-2">15+</div>
@@ -82,7 +80,7 @@ const HeroSection = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-white/80">Remote Planning Support</div>
+              <div className="text-white/80">Planning Support</div>
             </div>
           </div>
         </div>
