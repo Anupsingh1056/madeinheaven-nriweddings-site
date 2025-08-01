@@ -83,13 +83,12 @@ I'd love to discuss this further!`;
             <div className="bg-card border border-border rounded-xl p-8">
               <h3 className="font-serif text-2xl font-bold mb-6">Get Your Free Consultation</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/anupsingh1056@gmail.com" method="POST" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Full Name *</label>
                     <Input
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
+                      name="name"
                       placeholder="Your full name"
                       required
                     />
@@ -98,8 +97,7 @@ I'd love to discuss this further!`;
                     <label className="text-sm font-medium mb-2 block">Email *</label>
                     <Input
                       type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
+                      name="email"
                       placeholder="your.email@example.com"
                       required
                     />
@@ -109,27 +107,23 @@ I'd love to discuss this further!`;
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium mb-2 block">Country *</label>
-                    <Select value={formData.country} onValueChange={(value) => handleInputChange('country', value)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your country" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="usa">United States</SelectItem>
-                        <SelectItem value="canada">Canada</SelectItem>
-                        <SelectItem value="uk">United Kingdom</SelectItem>
-                        <SelectItem value="australia">Australia</SelectItem>
-                        <SelectItem value="uae">United Arab Emirates</SelectItem>
-                        <SelectItem value="germany">Germany</SelectItem>
-                        <SelectItem value="singapore">Singapore</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <select name="country" required className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option value="">Select your country</option>
+                      <option value="India">India</option>
+                      <option value="United States">United States</option>
+                      <option value="Canada">Canada</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="Australia">Australia</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Phone Number</label>
                     <Input
-                      value={formData.phone}
-                      onChange={(e) => handleInputChange('phone', e.target.value)}
+                      name="phone"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -140,60 +134,53 @@ I'd love to discuss this further!`;
                     <label className="text-sm font-medium mb-2 block">Preferred Event Date</label>
                     <Input
                       type="date"
-                      value={formData.eventDate}
-                      onChange={(e) => handleInputChange('eventDate', e.target.value)}
+                      name="eventDate"
                     />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Wedding Type</label>
-                    <Select value={formData.weddingType} onValueChange={(value) => handleInputChange('weddingType', value)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select wedding type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="destination">Destination Wedding</SelectItem>
-                        <SelectItem value="traditional">Traditional Wedding</SelectItem>
-                        <SelectItem value="royal">Royal/Palace Wedding</SelectItem>
-                        <SelectItem value="beach">Beach Wedding</SelectItem>
-                        <SelectItem value="intimate">Intimate Ceremony</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <select name="weddingType" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option value="">Select wedding type</option>
+                      <option value="Destination Wedding">Destination Wedding</option>
+                      <option value="Traditional Wedding">Traditional Wedding</option>
+                      <option value="Royal/Palace Wedding">Royal/Palace Wedding</option>
+                      <option value="Beach Wedding">Beach Wedding</option>
+                      <option value="Intimate Ceremony">Intimate Ceremony</option>
+                    </select>
                   </div>
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Expected Guest Count</label>
-                  <Select value={formData.guestCount} onValueChange={(value) => handleInputChange('guestCount', value)}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select guest count" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="50-100">50-100 guests</SelectItem>
-                      <SelectItem value="100-200">100-200 guests</SelectItem>
-                      <SelectItem value="200-300">200-300 guests</SelectItem>
-                      <SelectItem value="300+">300+ guests</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <select name="guestCount" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                    <option value="">Select guest count</option>
+                    <option value="50-100 guests">50-100 guests</option>
+                    <option value="100-200 guests">100-200 guests</option>
+                    <option value="200-300 guests">200-300 guests</option>
+                    <option value="300+ guests">300+ guests</option>
+                  </select>
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Tell us about your vision</label>
                   <Textarea
-                    value={formData.message}
-                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    name="message"
                     placeholder="Share your wedding vision, preferred locations, special requirements, or any questions you have..."
                     rows={4}
                   />
                 </div>
 
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value={window.location.href + "?success=true"} />
+                <input type="hidden" name="_subject" value="New Wedding Inquiry from Made in Heaven Website" />
+                
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     type="submit" 
                     variant="royal" 
                     className="flex-1"
-                    disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Inquiry'}
+                    Send Inquiry
                   </Button>
                   <Button 
                     type="button"

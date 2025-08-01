@@ -12,8 +12,8 @@ const AboutSection = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               We are Vadodara's premier event management company, specializing in creating 
-              magical wedding experiences for NRI families who want to celebrate their special 
-              day in India while planning from anywhere in the world.
+              magical wedding experiences for couples living in India or abroad. Our team ensures 
+              a seamless experience wherever you're based.
             </p>
           </div>
 
@@ -22,10 +22,10 @@ const AboutSection = () => {
             <div>
               <h3 className="font-serif text-3xl font-bold mb-6 text-primary">Our Story</h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded with a vision to bridge the gap between NRI families and their dream 
-                Indian wedding, Made in Heaven has been creating unforgettable celebrations 
-                for over a decade. We understand the unique challenges faced by families 
-                living abroad who want to honor their traditions.
+                Founded with a vision to create dream Indian weddings for families everywhere, 
+                Made in Heaven has been creating unforgettable celebrations for over a decade. 
+                We understand the unique needs of couples, whether they're planning locally 
+                or from abroad, who want to honor their traditions.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Our expertise spans from intimate gatherings to grand destination weddings 
@@ -47,7 +47,7 @@ const AboutSection = () => {
               <div className="bg-card p-6 rounded-lg border border-border">
                 <Globe className="w-8 h-8 text-primary mb-4" />
                 <h4 className="font-semibold mb-2">Global Reach</h4>
-                <p className="text-sm text-muted-foreground">Serving NRI families worldwide</p>
+                <p className="text-sm text-muted-foreground">Serving families worldwide</p>
               </div>
               <div className="bg-card p-6 rounded-lg border border-border">
                 <Shield className="w-8 h-8 text-primary mb-4" />
@@ -62,7 +62,7 @@ const AboutSection = () => {
             <div className="text-center">
               <h3 className="font-serif text-3xl font-bold mb-6 text-primary">Our Mission</h3>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                To make destination weddings in India accessible and stress-free for NRI families, 
+                To make destination weddings in India accessible and stress-free for all families, 
                 ensuring every moment is perfect while you focus on what matters most - 
                 celebrating your love story with family and friends.
               </p>

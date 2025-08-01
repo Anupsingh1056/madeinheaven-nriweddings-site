@@ -35,7 +35,7 @@ const TrustSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Why NRI Families Trust Us
+              Why Clients Around the World Trust Us
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Planning a wedding from overseas can be challenging. We've built our entire process 
